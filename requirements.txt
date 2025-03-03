@@ -1,0 +1,4 @@
+pandas # pandas k nacitani dat z excelu
+numpy # numpy pro vypocty
+matplotlib # vykreslovani grafu
+scipy # fitovani
