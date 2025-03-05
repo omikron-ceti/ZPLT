@@ -1,6 +1,0 @@
-pandas # k nacitani dat 
-openpyxl # take k nacitani dat
-numpy # numpy pro vypocty
-matplotlib # vykreslovani grafu
-scipy # fitovani
-decimal # zaokrouhlovani na jesnu platnou cifru
