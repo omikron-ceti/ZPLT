@@ -21,6 +21,8 @@ def hustota_vykonu(vzdalenost_od_ohniska:Iterable[float], stredni_vykon:float, w
     případně z transmitance a kalibrační hodnoty (např. pokud bylo měřeno napětí na fotodiodě). Předpokládá se kruhový průřez svazku.
 
     Args:
+        w_0 (float): Poloměr svazku v ohnisku 
+        z_0 (float): Rayleighova vzdálenost 
         polomer (Iterable[float]): Poloměry svazku
         stredni_vykon (float): Střední výkon
 
@@ -29,4 +31,3 @@ def hustota_vykonu(vzdalenost_od_ohniska:Iterable[float], stredni_vykon:float, w
     """
     polomer = polomer_svazku(w_0, z_0, vzdalenost_od_ohniska)
     return stredni_vykon/(2*math.pi*polomer**2)
-    
