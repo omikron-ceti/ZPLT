@@ -1,4 +1,5 @@
 *.aux
 *.log
 main.synctex.gz
-.~lock.*
+*~*
+*pycache*
