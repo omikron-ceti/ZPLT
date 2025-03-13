@@ -1,3 +1,6 @@
+"""Kosmetické úpravy: zaokrouhlování apod.
+
+"""
 from decimal import Decimal
 import numpy as np
 
