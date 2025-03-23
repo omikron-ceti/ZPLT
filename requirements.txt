@@ -4,3 +4,4 @@ numpy # vypocty
 matplotlib # vykreslovani grafu
 scipy # fitovani
 sympy #reseni rovnic
+jinja2 #LaTeX
