@@ -5,18 +5,18 @@
 % ----------------------------------------------------------------------
 %  Pracovní úkoly - opište přímo ze zadání
 % ----------------------------------------------------------------------
-\section{Pracovní úkoly}
+%\section{Pracovní úkoly}
 
-\begin{enumerate}
-\item ...
+%\begin{enumerate}
+%\item ...
 
-\end{enumerate}
+%\end{enumerate}
 
 % ----------------------------------------------------------------------
 %  Použité pomůcky
 % ----------------------------------------------------------------------
 
-\newpage
+%\newpage
 
 
 %\begin{figure}[H]
@@ -50,6 +50,11 @@
 			
 \section{Vypracování}
 \subsection{Charakteristika laseru v režimu volné generace}
+Závislosti výstupní energie $E$ a účinnosti $\eta$ na budící energii $E_\mathrm{b}$ pro zrcadla M337, M327 a křemenné sklo jsou uvedeny v Tab.~\ref{tab:ucinnost_zrcadla} a v grafech na Obr.~\ref{fig:ucinnost_M337},~\ref{fig:ucinnost_kremenne_sklo},~\ref{fig:ucinnost_M327}.
+
+Závislost délky impulsu $\tau_\mathrm{FR}$, a středního výkonu $P_\mathrm{str}$ na budící energii $E_\mathrm{b}$ pro pro optimální zrcadlo (M327) je uvedena v Tab.~\ref{tab:optimalni_zrcadlo} a vykreslena na Obr.~\ref{fig:optimalni_zrcadlo}.\\
+Hustota energie při maximální energii $\rho_\mathrm{max}=8,73\unit{J\cdot cm^{-2}}$ \\
+Obrázky časových průběhů záření jsou na Obr.~\ref{fig:cas_1},~\ref{fig:cas_2}~a~\ref{fig:cas_3}.
 
 \begin{table}[!hbt]
 \centering
@@ -97,11 +102,93 @@ $\tabh{E_\mathrm{b}}{J}$	&	\tabh{E}{J}	&	\tabh{\eta}{\%}	&	$\tabh{E_\mathrm{b}}{
 	\label{fig:ucinnost_kremenne_sklo}
 \end{figure}
 
+
+\begin{table}[!hbt]
+\centering
+	\begin{tabular}{|c||c|c|}
+		\hline
+$\tabh{E_\mathrm{b}}{J}$ & \tabh{\tau}{\mu s} & $\tabh{P_\mathrm{str}}{kW}$ \\ \hline \hline
+13,76 & 63 & 0 \\ \hline
+31,70 & 308 & 1,450 \\ \hline
+56,25 & 83 & 10,674 \\ \hline
+	\end{tabular}
+	\caption{Závislost délky impulsu $\tau_\mathrm{FR}$, a středního výkonu $P_\mathrm{str}$ na budící energii $E_\mathrm{b}$ pro zrcadlo M327.}
+	\label{tab:optimalni_zrcadlo}
+\end{table}
+
 \begin{figure}[H] 
 	\centering
 	\includegraphics[scale = 0.7]{img/optimalni_zrcadlo.pdf} 
 	\caption{Závislost délky impulsu $\tau_\mathrm{FR}$, a středního výkonu $P_\mathrm{str}$ na budící energii $E_\mathrm{b}$ pro zrcadlo M327.} 
-	\label{fig:ucinnost_kremenne_sklo}
+	\label{fig:optimalni_zrcadlo}
+\end{figure}
+
+\begin{figure}[H] 
+	\centering
+	\includegraphics[scale = 0.5]{img/SDS00002.png} 
+	\caption{Časový průbeh impulsu pro $E_\mathrm{b}$=13,76 J} 
+	\label{fig:cas_1}
+\end{figure}
+
+\begin{figure}[H] 
+	\centering
+	\includegraphics[scale = 0.5]{img/SDS00004.png} 
+	\caption{Časový průbeh impulsu pro $E_\mathrm{b}$=31,70 J} 
+	\label{fig:cas_2}
+\end{figure}
+
+\begin{figure}[H] 
+	\centering
+	\includegraphics[scale = 0.5]{img/SDS00004.png} 
+	\caption{Časový průbeh impulsu pro $E_\mathrm{b}$=65,25 J} 
+	\label{fig:cas_3}
+\end{figure}
+
+
+\subsection{Zesilování impulsů}
+Závislost zesílení impulsu $G$ na budící energii $E_\mathrm{b}$ laserového oscilátoru pro optimální zrcadlo (M327) je na Obr.\ref{fig:zasileni}.
+\begin{figure}[H] 
+	\centering
+	\includegraphics[scale = 0.7]{img/zesileni.pdf} 
+	\caption{Závislost zesílení impulsu $G$ na budící energii $E_\mathrm{b}$ laserového oscilátoru pro zrcadlo M327.} 
+	\label{fig:zasileni}
+\end{figure}
+
+\subsection{Q-spínaný režim}
+Výsledky měření délky $\tau$, energie $E$, špičkového výkonu $P_\mathrm{peak}$ a plošné hustoty energie $\rho$ Q-spínaných impulsů jsou v Tab.~\ref{tab:q_spinani}. \\
+Hustota energie v Q-spínaném režimu je oproti režimu volné generace přibližně $100\times$ vyšší.
+Záznam časového vývoje z osciloskopu
+
+\begin{table}[!hbt]
+\centering
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+	&	\tabh{\tau}{ns}	&	\tabh{E}{mJ}	&	$\tabh{P_\mathrm{peak}}{kW}$	&	\tabh{\rho}{J\cdot cm^{-2}}	\\ \hline	\hline
+	&	25	&	51	&	2075	&	773	\\ \hline	
+	&	24	&	51	&	2145	&	773	\\ \hline	
+	&	27	&	54	&	2042	&	819	\\ \hline	
+	&	30	&	65	&	2154	&	981	\\ \hline	
+	&	26	&	52	&	2000	&	784	\\ \hline	
+	&	22	&	48	&	2245	&	734	\\ \hline	
+	&	28	&	67	&	2362	&	1008	\\ \hline	
+	&	26	&	45	&	1761	&	680	\\ \hline	
+	&	25	&	66	&	2612	&	1005	\\ \hline	
+	&	25	&	52	&	2048	&	784	\\ \hline	\hline
+Průměr	&	26	&	55	&	2144	&	834	\\ \hline	
+Odchylka	&	2	&	7	&	216	&	113	\\ \hline	
+
+
+	\end{tabular}
+	\caption{Výsledky měření délky $\tau$, energie $E$, špičkového výkonu $P_\mathrm{peak}$ a plošné hustoty energie $\rho$ Q-spínaných impulsů.}
+	\label{tab:q_spinani}
+\end{table}
+
+
+\begin{figure}[H] 
+	\centering
+	\includegraphics[scale = 0.5]{img/SDS00008.png} 
+	\caption{Záznam časového vývoje z osciloskopu pro Q-spínaný puls.}
+	\label{fig:cas_3}
 \end{figure}
 % ----------------------------------------------------------------------
 %  Diskuse - obsahuje komentář k jednotlivým výsledkům, porovnání s očekáváním/tabulkovými hodnotami, zdroje především systematických chyb měření, návrh na zlepšení výsledků,...

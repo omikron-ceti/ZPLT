@@ -1,0 +1,9 @@
+\begin{tabular}{rrr}
+\toprule
+E_b & \tau [\mu s] & P_str [W] \\
+\midrule
+13,764100 & 63,600000 & 0,000000 \\
+31,696900 & 308,000000 & 1450,035265 \\
+56,250000 & 83,200000 & 10674,490373 \\
+\bottomrule
+\end{tabular}
