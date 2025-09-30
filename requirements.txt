@@ -3,5 +3,6 @@ openpyxl # engine pro nacitani dat z excelu
 numpy # vypocty
 matplotlib # vykreslovani grafu
 scipy # fitovani
-sympy #reseni rovnic
-jinja2 #LaTeX
+sympy # reseni rovnic
+jinja2 # LaTeX
+uncertainties # chyby
