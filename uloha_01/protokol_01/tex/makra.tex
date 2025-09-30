@@ -1,0 +1,43 @@
+% ----------------------------------------------------------------------
+%  Identifikace protokolu (příkazy lze použít v celém dokumentu)
+% ----------------------------------------------------------------------
+
+%  Nastaví autora, název, datum, skupinu měření apod. 
+\newcommand{\Institute}{FJFI~ČVUT~v~Praze}
+%\newcommand{\Subject}{Základy fyzikálních měření}
+\newcommand{\Subject}{Základní praktika z laserové techniky}  %odkomentujte dle potřeby
+
+%  Máte-li více spoluměřících než jednoho, vložte jen jejich příjmení
+\newcommand{\Author}{B -- Hrnečková, Ray}
+\newcommand{\Coauthor}{Jméno kolegy} 
+\newcommand{\Group}{Pátek 8:00} %den, kdy chodíte na praktika, nikoli obor
+\newcommand{\Circle}{2} %číslo skupiny v rámci praktika, nikoli kruh
+
+%  Tato část bude v každém protokolu jiná, nezapomeňte upravit!
+\newcommand{\Title}{Pevnolátkový Nd:YAG laser v režimu volné generace a v režimu Q-spínání,
+zesilování laserového záření a generace druhé harmonické}
+\newcommand{\Labdate}{19. 3. 2025} %datum měření, nikoli datum odevzdání
+\newcommand{\Worktime}{5 h} %jak dlouho vám trvalo vypracování protokolu
+
+
+
+
+% ----------------------------------------------------------------------
+%  Vlastní příkazy
+% ----------------------------------------------------------------------
+
+
+%  Matematika
+\newcommand{\ee}{\mathrm{e}} %eulerovo číslo
+\newcommand{\ii}{\mathrm{i}} %imaginární jednotka
+
+% Jednotky
+\renewcommand{\unit}[1]{\,\mathrm{#1}} %jednotky zadávejte pomocí tohoto příkazu
+\renewcommand{\deg}{\ensuremath{\mathring{\;}}} %symbol stupně
+\newcommand{\celsius}{\ensuremath{\deg\mathrm{C}}} %stupně celsia
+
+%(hodnota plus mínus chyba) jednotka
+\newcommand{\hodn}[3]{(#1 \pm #2)\unit{#3}} 
+
+%veličina [jednotka] do hlavičky tabulky
+\newcommand{\tabh}[2]{\ensuremath{#1\,[\mathrm{#2}]}} 
